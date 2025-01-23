@@ -1,4 +1,4 @@
-# CMP_SC 3050 FS2024
+# CMP_SC 3050 SP2025
 ****SUBMIT THIS AS lab01****
 # Assignment 1: Implement Insertion Sort
 

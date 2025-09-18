@@ -33,8 +33,8 @@ void insertionsort(void *array,
 			Swap(item1,item2,size); //swap 'em!
 			if(item1 != array) //if the backtracking hasn't reached the VERY start of the list
 			{
-				item2 = item1; //move the focus of item2 back by 1
-				item1 = item2 - size; //move the focus of item1 back by 1
+				item2 = item2 - size; //move the focus of item2 back by 1
+				item1 = item1 - size; //move the focus of item1 back by 1
 			}
 		}
 	}

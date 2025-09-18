@@ -31,8 +31,11 @@ void insertionsort(void *array,
 		while(CompareFunc(item1,item2)>0) //if item1 and item2 are in the incorrect positions...
 		{
 			Swap(item1,item2,size); //swap 'em!
-			item2 = item1;
-			item1 = item2 - size;
+			if(item1 != array) //if the backtracking hasn't reached the VERY start of the list
+			{
+				item2 = item1; //move the focus of item2 back by 1
+				item1 = item2 - size; //move the focus of item1 back by 1
+			}
 		}
 	}
 }
